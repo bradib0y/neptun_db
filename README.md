@@ -68,4 +68,9 @@ Ezeknek az **átlagoknak az átlagolásakor** azonban ezt figyelembe kell venni:
   - 'Nem', 
   - 'Irányítószám'
 
-- A MultiIndex és Kategória változók munkafolyamatot újra kell csinálni beolvasás után, így a folyamat egyszerű reprodukálhatósága érdekében Python package közzététele javasolt, ami bármikor beimportálható a további notebookokban
+- A MultiIndex és Kategória változók munkafolyamatot újra kell csinálni beolvasás után, így a folyamat egyszerű reprodukálhatósága érdekében **Python packagebe** foglaltam a betöltést:
+  - !pip install loadneptun
+  - import loadneptun
+  - df = loadneptun.loadneptun(3) # ez betölti a neptun_db_v3.csv-t githubról egy dataframebe MultiIndexszel, kategóriaváltozókkal
+
+# Negyedik verzió: neptun_db_v4.csv
